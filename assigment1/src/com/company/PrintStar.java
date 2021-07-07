@@ -69,5 +69,6 @@ class Main {
     printStar.pattern2();
     printStar.pattern3();
     printStar.pattern4();
+
     }
 }
