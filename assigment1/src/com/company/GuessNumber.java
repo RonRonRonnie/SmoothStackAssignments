@@ -29,7 +29,6 @@ public class GuessNumber {
                 System.out.print("keep guessing, ");
 
             }
-
         }
         if(chances == 0){
             System.out.println("Sorry,correct answer is "+ans);
