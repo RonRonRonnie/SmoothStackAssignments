@@ -25,9 +25,9 @@ class PrintStar{
 
     public void pattern3(){
         System.out.println("3)");
-        int row = 4;
-        int space = row - 1;
-        for(int i = 1;i<=row;i++){
+        int n = 4;
+        int space = n - 1;
+        for(int i = 1;i<=n;i++){
             for(int j = 1;j<=space;j++){
                 System.out.print(" ");
             }
