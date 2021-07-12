@@ -12,13 +12,15 @@ public class GuessNumber {
         Scanner in = new Scanner(System.in);
         Random random = new Random();
         int ans = min + random.nextInt(max-min+1);
+        int highBound = ans + 10;
+        int lowBound = ans -10;
         //
         while(chances > 0){
             System.out.println(
                     "Guess a number between 1 and 100: ");
             guess = in.nextInt();
 
-            if(((guess+10==ans)&&(ans-guess<=10))||((guess-10==ans)&&(guess-ans<=10))||guess==ans){
+            if((ans >= guess && guess >= lowBound)||(guess>=ans && guess <= highBound)){
                 System.out.println(ans);
                 break;
             }else{
