@@ -1,4 +1,4 @@
-package JavaBasicFiveAssigment;
+package JavaBasicFiveAssigment.Assignment1;
 
 
 import java.time.*;
