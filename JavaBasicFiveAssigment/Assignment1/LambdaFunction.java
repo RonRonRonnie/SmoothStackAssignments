@@ -79,7 +79,7 @@ public class LambdaFunction {
         System.out.println("**********************************************");
         //test for method that returns a comma separated string based on a given list of integers.
         List<Integer> test = new ArrayList<>();
-        test.add(3);
+        test.add(13);
         test.add(44);
         System.out.println(test);
         String test1 = commaSeparated(test);

@@ -18,7 +18,7 @@ class DatetimeAPI implements TemporalQuery<Boolean> {
 
         // using adjuster for local date-time
         LocalDate localDate
-                = LocalDate.of(2021, 07, 13);
+                = LocalDate.of(2021, 11, 13);
         LocalDate previousDOW
                 = localDate.with(temporalAdjuster);
 
