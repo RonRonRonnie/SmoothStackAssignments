@@ -29,8 +29,12 @@ WHERE B.CardNo = L.CardNo
 GROUP BY B.CardNo
 HAVING COUNT(*) > 5 ;
 
-SELECT TItle, NoOfCopies
-FROM ( ( (tbl_author NATURAL JOIN tbl_book)
-NATURAL JOIN tbl_book_copies)
-NATURAL JOIN tbl_library_branch)
-WHERE authorName = 'Stephen King' and BranchName = 'Central ';
+SELECT
+	BK.Title, 
+	BC.NoOfCopies
+	FROM tbl_book BK
+	INNER JOIN tbl_book_copies BC ON BC.BookID = BK.BookID
+	INNER JOIN tbl_library_branch LB ON LB.BranchID = BC.BranchID
+	INNER JOIN tbl_author A ON A.authorId = BK.authId
+WHERE AuthorName = 'Stephen King'
+AND BranchName = 'Central';
